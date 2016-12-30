@@ -1,5 +1,15 @@
 # Google Cloud Print service for Laravel 5
 
+## Install
+
+Via composer :
+
+    composer require bnbwebexpertise/laravel-google-cloud-print
+
+Then add the service provider class to your Laravel `config/app.php` :
+
+    BnB\GoogleCloudPrint\LaravelServiceProvider::class
+
 ## Configuration
 
 Set the env parameter `GCP_CREDENTIALS_PATH` to the absolute path
@@ -9,12 +19,12 @@ Set the env parameter `GCP_CREDENTIALS_PATH` to the absolute path
 ### Google service setup
 
 Create a service account key (IAM) with a `***@re-speedy-diagnostic.iam.gserviceaccount.com`
- and download the JSON key file at (https://console.developers.google.com/apis/credentials)[https://console.developers.google.com/apis/credentials].
+ and download the JSON key file at [https://console.developers.google.com/apis/credentials](https://console.developers.google.com/apis/credentials).
  Copy the file into the project at the configured env path.
 
 You also need to allow print access to the generated email address on
  all the desired printers via the Google Cloud Print console at
- (https://www.google.com/cloudprint/#printers)[https://www.google.com/cloudprint/#printers].
+ [https://www.google.com/cloudprint/#printers](https://www.google.com/cloudprint/#printers).
 
 This library will attempt to accept the invite if the Google API rejects
  the credentials. Indeed Google service accounts do not get the invitation
