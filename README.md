@@ -8,7 +8,7 @@ Via composer :
 
 Then add the service provider class to your Laravel `config/app.php` :
 
-    BnB\GoogleCloudPrint\LaravelServiceProvider::class
+    Bnb\GoogleCloudPrint\LaravelServiceProvider::class
 
 ## Configuration
 

@@ -1,5 +1,5 @@
 <?php
-use BnB\GoogleCloudPrint\GoogleCloudPrint;
+use Bnb\GoogleCloudPrint\GoogleCloudPrint;
 
 class GoogleCloudPrintTest extends PHPUnit_Framework_TestCase
 {

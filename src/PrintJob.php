@@ -6,7 +6,7 @@
  * @copyright 2016 - B&B Web Expertise
  */
 
-namespace BnB\GoogleCloudPrint;
+namespace Bnb\GoogleCloudPrint;
 
 /**
  * Class PrintJob
@@ -16,7 +16,7 @@ namespace BnB\GoogleCloudPrint;
  * @property string status
  * @property string title
  *
- * @package BnB\GoogleCloudPrint
+ * @package Bnb\GoogleCloudPrint
  */
 class PrintJob
 {

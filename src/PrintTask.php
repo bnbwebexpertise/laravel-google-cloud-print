@@ -1,8 +1,8 @@
 <?php
-namespace BnB\GoogleCloudPrint;
+namespace Bnb\GoogleCloudPrint;
 
-use BnB\GoogleCloudPrint\Exceptions\InvalidSourceException;
-use BnB\GoogleCloudPrint\Exceptions\PrintTaskFailedException;
+use Bnb\GoogleCloudPrint\Exceptions\InvalidSourceException;
+use Bnb\GoogleCloudPrint\Exceptions\PrintTaskFailedException;
 
 class PrintTask
 {

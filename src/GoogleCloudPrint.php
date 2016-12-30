@@ -1,7 +1,7 @@
 <?php
-namespace BnB\GoogleCloudPrint;
+namespace Bnb\GoogleCloudPrint;
 
-use BnB\GoogleCloudPrint\Exceptions\InvalidCredentialsException;
+use Bnb\GoogleCloudPrint\Exceptions\InvalidCredentialsException;
 use Google_Client;
 use Illuminate\Contracts\Config\Repository as Config;
 
@@ -33,7 +33,7 @@ class GoogleCloudPrint
     protected function setUpClient()
     {
         if ($this->client === null) {
-            $credentialsPath = $this->credentialsPath ?: $this->config->get('credentials');
+            $credentialsPath = $this->credentialsPath ?: $this->config->get('gcp.credentials');
 
             if ( ! preg_match('/^\//', $credentialsPath)) {
                 $credentialsPath = base_path($credentialsPath);
