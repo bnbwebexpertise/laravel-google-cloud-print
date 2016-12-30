@@ -8,7 +8,19 @@ Via composer :
 
 Then add the service provider class to your Laravel `config/app.php` :
 
-    Bnb\GoogleCloudPrint\LaravelServiceProvider::class
+    'providers' => [
+        // ...
+        Bnb\GoogleCloudPrint\LaravelServiceProvider::class,
+        // ...
+    ],
+
+Also add the Facade alias if you intend to use it :
+
+    'aliases' => [
+        // ...
+        'GoogleCloudPrint' => Bnb\GoogleCloudPrint\Facades\GoogleCloudPrint::class,
+        // ...
+    ],
 
 ## Configuration
 
