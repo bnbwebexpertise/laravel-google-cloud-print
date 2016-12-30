@@ -5,8 +5,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "BnB Web Expertise",
-      "email": "support@bnb.re"
+      "name": "Jérémy Gaulin",
+      "email": "jeremy@bnb.re"
     }
   ],
   "autoload": {
