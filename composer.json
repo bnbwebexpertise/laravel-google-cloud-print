@@ -11,7 +11,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "BnB\\GoogleCloudPrint\\": "src/"
+      "Bnb\\GoogleCloudPrint\\": "src/"
     }
   },
   "require": {
