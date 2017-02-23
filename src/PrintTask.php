@@ -237,8 +237,7 @@ class PrintTask
             'ticket' => json_encode($ticket)
         ]);
 
-        if ($job) {
-            $job = json_decode($job);
+        if ($job && ($job = json_decode($job))) {
 
             if ($job->success) {
                 return new PrintJob($job->job);
