@@ -1,4 +1,4 @@
-# Google Cloud Print service for Laravel 5
+# [DEPRECATED] Google Cloud Print service for Laravel 5
 
 ## Install
 
